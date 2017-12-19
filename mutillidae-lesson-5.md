@@ -1,4 +1,4 @@
-# Lesson 5: Manual SQL Injection with Firebug
+# Manual SQL Injection with Firebug
 
 ## SQL Injection: Single Quote Test On Username Field
 
