@@ -153,7 +153,7 @@ Pada [memory] dirubah enabled = yes
 
 # Tahap Ketiga (Menyiapkan Guest OS)
 
-## Langkah - langkah menyiapkan guest OS
+## Langkah - langkah menyiapkan guest OS dan menjalankan skenario pertama
 
 Kelompok kami menggunakan windows 7 yang di install di virtualbox untuk guest OS. Windows 7 yang akan digunakan sebagai guest OS sudah di install pada tahap pertama.
 
@@ -179,3 +179,78 @@ Kelompok kami menggunakan windows 7 yang di install di virtualbox untuk guest OS
 ![1](/cuckoo/59.png)
 <br>
 
+6. Download malware pada github theZoo. Disini kelompok kami memilih Ransomware.Locky. Download Ransomware.Locky.zip
+![1](/cuckoo/60.png)
+<br>
+
+7. Setelah itu download malware Kelihos. Download Kelihos.zip
+![1](/cuckoo/63.png)
+<br>
+
+8. Setelah itu, buat sebuah direktori pada direktori Download di host Anda (misal kami buat nama direktori Infected Folder). Lalu pindah Ransomware.Locky.zip dan Kelihos.zip ke dalam direktori Infected Folder, dan ekstrak di dalam direktori tersebut, sehingga akan seperti pada gambar dibawah.
+![1](/cuckoo/64.png)
+<br>
+
+9. Copykan agent.py ke dalam os virtual windows 7 melalui shared folder tadi. Atau juga bisa menggunakan google drive ataupun samba (misal freeshare TC). Setelah itu, klik 2x pada agent.py untuk menajalankannya. Sehingga akan muncul seperti pada gambar dibawah
+![1](/cuckoo/65.png)
+<br>
+
+10. Setelah itu kembali lagi ke host Anda (ubuntu), jalankan cuckoo.py pada direktori cuckoo dengan mengetikkan ```./cuckoo.py```
+![1](/cuckoo/66.png)
+<br>
+
+11. Pada poin 10 terlihat eror ketika menjalankan cuckoo.py, lalu ketikkan seperti pada gambar dibawah.
+![1](/cuckoo/67.png)
+<br>
+
+12. Jalankan cuckoo.py kembali
+![1](/cuckoo/68.png)
+<br>
+
+13. Buka cuckoo.py pada browser host Anda, dengan mengetikkan 127.0.0.1:8000, lalu pilih menu submit. Atau Anda juga bisa langsung mengaksesnya dengan mengetikkan 127.0.0.1:8000/submit pada browser Anda. Lalu pilih select untuk memilih file malware.
+![1](/cuckoo/69.png)
+<br>
+
+14. Setelah file malware dipilih, klik Advanced Options, lalu ubah Analysis Packagenya menjadi exe. Setelah itu tekan enter dan akan muncul seperti gambar dibawah
+![1](/cuckoo/70.png)
+![1](/cuckoo/71.png)
+<br>
+
+15. Setelah itu akan muncul sebuah tampilan untuk menunggu dari halaman cuckoo, dan akan merefresh setiap 5 detik sampai proses selesai.
+![1](/cuckoo/72.png)
+<br>
+
+16. Setelah selesai, maka akan dapat hasil analisis dari file yang sudah kita pilih tadi.
+![1](/cuckoo/73.png)
+<br>
+
+## Langkah - langkah menyiapkan guest OS dan menjalankan skenario kedua
+
+Pada skenario kedua, kelompok kami menggunakan malware Trojan.Kovter. Langkah-langkah poin 1 sampai 12 pada uji coba skenario pertama tidak usah dilakukan kembali di uji coba skenario kedua ini.
+
+1. Buka cuckoo.py pada browser host Anda, dengan mengetikkan 127.0.0.1:8000, lalu pilih menu submit. Atau Anda juga bisa langsung mengaksesnya dengan mengetikkan 127.0.0.1:8000/submit pada browser Anda. Lalu pilih select untuk memilih file malware.
+![1](/cuckoo/77.png)
+<br>
+
+2. Setelah file malware dipilih, klik Advanced Options, lalu ubah Analysis Packagenya menjadi exe. Setelah itu tekan enter dan akan muncul seperti gambar dibawah
+![1](/cuckoo/78.png)
+<br>
+
+3. Setelah itu akan muncul sebuah tampilan untuk menunggu dari halaman cuckoo, dan akan merefresh setiap 5 detik sampai proses selesai.
+![1](/cuckoo/79.png)
+<br>
+
+4. Setelah selesai, maka akan dapat hasil analisis dari file yang sudah kita pilih tadi.
+![1](/cuckoo/80.png)
+![1](/cuckoo/82.png)
+![1](/cuckoo/83.png)
+![1](/cuckoo/85.png)
+<br>
+
+## Kesimpulan dan Saran
+
+1. Di internet Anda dapat mendownload berbagai macam malware, salah satu contohnya Anda dapat mendownload malware dari alamat <b>https://github.com/ytisf/theZoo</b>.
+
+2. Jika Anda ingin mencoba berbagai macam malware, sebaiknya gunakan OS virtual dengan menggunakan virtualbox. Hal tersebut dapat meminimalisir kerusakan pada host utama yang sedang Anda gunakan.
+
+3. Hampir setiap hari malware yang tersebar di dunia ini selalu di update, maka dari itu untuk pengguna OS Windows, selalu mengupdate juga anti-virusnya.
