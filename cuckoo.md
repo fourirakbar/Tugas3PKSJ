@@ -179,3 +179,47 @@ Kelompok kami menggunakan windows 7 yang di install di virtualbox untuk guest OS
 ![1](/cuckoo/59.png)
 <br>
 
+6. Download malware pada github theZoo. Disini kelompok kami memilih Ransomware.Locky. Download Ransomware.Locky.zip
+![1](/cuckoo/60.png)
+<br>
+
+7. Setelah itu download malware Kelihos. Download Kelihos.zip
+![1](/cuckoo/63.png)
+<br>
+
+8. Setelah itu, buat sebuah direktori pada direktori Download di host Anda (misal kami buat nama direktori Infected Folder). Lalu pindah Ransomware.Locky.zip dan Kelihos.zip ke dalam direktori Infected Folder, dan ekstrak di dalam direktori tersebut, sehingga akan seperti pada gambar dibawah.
+![1](/cuckoo/64.png)
+<br>
+
+9. Copykan agent.py ke dalam os virtual windows 7 melalui shared folder tadi. Atau juga bisa menggunakan google drive ataupun samba (misal freeshare TC). Setelah itu, klik 2x pada agent.py untuk menajalankannya. Sehingga akan muncul seperti pada gambar dibawah
+![1](/cuckoo/65.png)
+<br>
+
+10. Setelah itu kembali lagi ke host Anda (ubuntu), jalankan cuckoo.py pada direktori cuckoo dengan mengetikkan ```./cuckoo.py```
+![1](/cuckoo/66.png)
+<br>
+
+11. Pada poin 10 terlihat eror ketika menjalankan cuckoo.py, lalu ketikkan seperti pada gambar dibawah.
+![1](/cuckoo/67.png)
+<br>
+
+12. Jalankan cuckoo.py kembali
+![1](/cuckoo/68.png)
+<br>
+
+13. Buka cuckoo.py pada browser host Anda, dengan mengetikkan 127.0.0.1:8000, lalu pilih menu submit. Atau Anda juga bisa langsung mengaksesnya dengan mengetikkan 127.0.0.1:8000/submit pada browser Anda. Lalu pilih select untuk memilih file malware.
+![1](/cuckoo/69.png)
+<br>
+
+14. Setelah file malware dipilih, klik Advanced Options, lalu ubah Analysis Packagenya menjadi exe. Setelah itu tekan enter dan akan muncul seperti gambar dibawah
+![1](/cuckoo/70.png)
+![1](/cuckoo/71.png)
+<br>
+
+15. Setelah itu akan muncul sebuah tampilan untuk menunggu dari halaman cuckoo, dan akan merefresh setiap 5 detik sampai proses selesai.
+![1](/cuckoo/72.png)
+<br>
+
+16. Setelah selesai, maka akan dapat hasil analisis dari file yang sudah kita pilih tadi.
+![1](/cuckoo/73.png)
+<br>
