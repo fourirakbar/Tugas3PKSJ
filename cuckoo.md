@@ -1,5 +1,12 @@
 # Tahap Pertama (Instalasi)
 
+## Tools yang digunakan
+
+1. Cuckoo Sandbox adalah salah satu sistem yang digunakan untuk mengalisa malware / file yang mencurigakan yang terdapat didalam sistem dan memberikan hasil yang terperinci mengenai apa yang terjadi dan apa yang telah dilakukan oleh malware / file yang mencurigakan tersebut dalam hitungan detik.
+
+2. Malware adalah suatu sofware atau suatu file applikasi / suatu file tertentu yang disisipi dengan menggunakan code tertentu yang digunakan untuk mengambil data yang sensitif, atau mengganggu jalannya operasi komputer, atau mendapatkan suatu hak akses khusus, atau menampilkan iklan iklan yang tidak diinginkan.
+<br>
+
 ## Langkah - langkah menginstal Cuckoo
 
 1. Dalam tugas ini, kelompok kami menggunakan OS ubuntu 16.04 untuk menginstall cuckoo. Pertama tama install beberapa kebutuhan untuk menginstall cuckoo dengan mengetikkan ```sudo apt-get install python python-pip python-dev libffi-dev libssl-dev```
@@ -254,3 +261,9 @@ Pada skenario kedua, kelompok kami menggunakan malware Trojan.Kovter. Langkah-la
 2. Jika Anda ingin mencoba berbagai macam malware, sebaiknya gunakan OS virtual dengan menggunakan virtualbox. Hal tersebut dapat meminimalisir kerusakan pada host utama yang sedang Anda gunakan.
 
 3. Hampir setiap hari malware yang tersebar di dunia ini selalu di update, maka dari itu untuk pengguna OS Windows, selalu mengupdate juga anti-virusnya.
+<br>
+
+## Referensi
+
+1. https://cuckoosandbox.org/
+2. http://docs.cuckoosandbox.org/en/latest/installation/host/installation/
