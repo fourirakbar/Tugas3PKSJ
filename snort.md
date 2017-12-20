@@ -218,4 +218,23 @@
 5. Apabila konfigurasi berhasil maka akan muncul alert pada server Anda
     ![1](/snort/snort12.png)
 
+-----------------
 
+#### Ujicoba Snort
+-----------------
+
+1. Download file pcap dari situs http://www.secrepo.com/
+    ![1](/snort/snort13.png)
+
+2. Jalankan command ini untuk membaca file pcap yang sudah diunduh
+    ```
+    sudo snort -c /etc/snort/[nama_rules] -r [file.pcap] -b -l 
+    ```
+    ![1](/snort/snort14.png)
+
+3. Hasil akan muncul di file bernama alert
+    ![1](/snort/snort15.png)
+
+Resources: https://www.upcloud.com/support/installing-snort-on-ubuntu/#community-rules
+
+https://www.youtube.com/watch?v=qGATEsSO4QY

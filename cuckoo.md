@@ -223,3 +223,7 @@ Kelompok kami menggunakan windows 7 yang di install di virtualbox untuk guest OS
 16. Setelah selesai, maka akan dapat hasil analisis dari file yang sudah kita pilih tadi.
 ![1](/cuckoo/73.png)
 <br>
+
+Resources: http://docs.cuckoosandbox.org/en/latest/installation/host/installation/
+
+https://bdavis-cybersecurity.blogspot.co.id/
